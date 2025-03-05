@@ -29,6 +29,57 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+      
+    <style>
+        .position-relative {
+            position: relative;
+        }
+        .image-container {
+        position: relative;
+        width: 100%;
+        padding-top: 100%; /* Creates a 1:1 aspect ratio */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.05);
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40%;
+        font-weight: bold;
+    }
+    </style>
+
+
 </head>
 
 <body>
@@ -88,12 +139,52 @@
 
 
     <!-- Service Start -->
+
+
+
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Our Services</h6>
                 <h1 class="mb-5">Explore Our Services</h1>
             </div>
+
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/warehouse.jpg" alt="Warehouse">
+                        </div>
+                        <h4 class="mb-3">WARE HOUSING</h4>
+                        <p>Help people on ware houseing, receiving goods, packing, loading</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>READ MORE</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/containers.jpg" alt="Loading Containers">
+                        </div>
+                        <h4 class="mb-3">LOADING CONTAINERS</h4>
+                        <p>Loading conatinres, loaidng cargo to any part of Africa, doing documents, declaring</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>READ MORE</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/consulting.jpg" alt="Consulting">
+                        </div>
+                        <h4 class="mb-3">ORDERING GOODS PURCHASING CONSULTING</h4>
+                        <p>We consult, help you order goods, translate, and help you find suitable goods and the right items</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>READ MORE</span></a>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
@@ -156,67 +247,81 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="container my-5">
+                <h2 class="text-center mb-4">We Connect Exporters & Importers</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/sesame.jpg" alt="Sesames">
+                            <div class="overlay-text">SESAMES</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/commodities.jpg" alt="Commodity Goods">
+                            <div class="overlay-text">COMMODITY GOODS, DAILY GOODS, SPARE PARTS AND MORE FROM THE WORLD'S BIGGEST MARKET</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/soybeans.jpg" alt="Soybeans">
+                            <div class="overlay-text">SOYBEANS & MORE</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/machines.jpg" alt="Machines">
+                            <div class="overlay-text">MACHINES & MANUFACTURING</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/construction.jpg" alt="Construction">
+                            <div class="overlay-text">CONSTRUCTION GOODS AND ITEMS</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/building.jpg" alt="Construction">
+                            <div class="overlay-text">BUILDING FINISHING GOODS</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/plastic.jpg" alt="Construction">
+                            <div class="overlay-text">PE,PP,PVE,PET , MASTER BACHS AND MORE RAW MATERIALS PLASTIC</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/sino.jpg" alt="Construction">
+                            <div class="overlay-text">Sino Trucks</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/cars.jpg" alt="Construction">
+                            <div class="overlay-text">CARS , ELECTRIC FULE BIG AND SMALL</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/metal.jpg" alt="Construction">
+                            <div class="overlay-text">METAL SHEET AND OTHER METAL RAW MATERAILS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            
+
+
         </div>
     </div>
     <!-- Service End -->
-    <!-- Service End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="text-center">
-                <h6 class="text-secondary text-uppercase">Testimonial</h6>
-                <h1 class="mb-0">Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Testimonial End -->
 
 
@@ -253,11 +358,11 @@
                     <a class="btn btn-link" href="">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <h4 class="text-light mb-4">Subscribe to Our Newsletter</h4>
+                    <p>Stay updated with the latest industry news, shipping tips, and exclusive offers from EasyFreight Logistics.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
                     </div>
                 </div>
             </div>
