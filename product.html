@@ -15,6 +15,59 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .product-item {
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        
+        .product-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-btn {
+        transition: all 0.3s ease;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .category-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+    }
+
+    .category-content {
+        padding: 15px;
+    }
+
+    /* Adjust the column layout */
+    .card-body .row .col-md-4,
+    .card-body .row .col-sm-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    /* Adjust Popular Products layout */
+    
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .category-btn {
+            margin-bottom: 15px;
+        }
+    }
+
+          
+
+
+        </style>
 </head>
 
 <body>
@@ -50,17 +103,164 @@
 
     <!-- Product Details Start -->
     <div class="container py-5">
-        <h1 class="mb-4">Product Name</h1>
         <div class="row">
-            <div class="col-md-6">
-                <img src="img/feature.jpg" alt="Product Image" class="img-fluid">
+            <!-- Product Categories Sidebar -->
+            <div class="col-md-3">
+                <!-- Product Categories Section -->
+     <div class="card mb-5">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">Product Categories</h5>
+    </div>
+    <div class="card-body">
+        <div class="row g-3">
+            <!-- Category 1 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#work-tools" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Work Tools, Supplies</h6>
+                        <small class="text-muted">(12)</small>
+                    </div>
+                </a>
             </div>
-            <div class="col-md-6">
-                <h3>Product Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Sed vitae nisi at libero suscipit tincidunt.</p>
-                <h4>Price: $XX.XX</h4>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+
+            <!-- Category 2 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#production-equipment" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Production Processing Equipment</h6>
+                        <small class="text-muted">(8)</small>
+                    </div>
+                </a>
             </div>
+
+            <!-- Category 3 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#construction-equipment" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Construction Equipment</h6>
+                        <small class="text-muted">(14)</small>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#safety-equipment" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Safety Equipment</h6>
+                        <small class="text-muted">(6)</small>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#logistics-storage" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Logistics Storage Goods</h6>
+                        <small class="text-muted">(4)</small>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#cutting-tools" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Cutting Tool</h6>
+                        <small class="text-muted">(10)</small>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category 7 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#office-supplies" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Office Housing Supplies</h6>
+                        <small class="text-muted">(10)</small>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category 8 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#agricultural-products" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Agricultural Products</h6>
+                        <small class="text-muted">(18)</small>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category 9 (duplicate) -->
+            <div class="col-md-4 col-sm-6">
+                <a href="#office-supplies-2" class="category-btn d-block p-3 text-decoration-none text-dark">
+                    <div class="category-content rounded">
+                        <h6 class="mb-1">Office Housing Supplies</h6>
+                        <small class="text-muted">(20)</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+                
+            </div>
+            
+            <!-- Main Product Content -->
+<div class="col-md-9">
+    <h1 class="mb-4">Popular Products</h1>
+    
+    <div class="row g-3">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+            <div class="product-item p-3 border rounded">
+                <img src="img/feature.jpg" alt="Product Image" class="img-fluid mb-3" style="height: 200px; object-fit: cover;">
+                <h5 class="mb-1">Product Name</h5>
+                <p class="text-muted mb-2">Product Description</p>
+                <h6>Price: $XX.XX</h6>
+                <a href="productdetail.html" class="btn btn-primary w-100 mt-2">View Details</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4">
+            <div class="product-item p-3 border rounded">
+                <img src="img/feature.jpg" alt="Product Image" class="img-fluid mb-3" style="height: 200px; object-fit: cover;">
+                <h5 class="mb-1">GPS Tracker Pro</h5>
+                <p class="text-muted mb-2">Lorem ipsum dolor sit amet</p>
+                <h6>Price: $149.99</h6>
+                <a href="#" class="btn btn-primary w-100 mt-2">View Details</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4">
+            <div class="product-item p-3 border rounded">
+                <img src="img/feature.jpg" alt="Product Image" class="img-fluid mb-3" style="height: 200px; object-fit: cover;">
+                <h5 class="mb-1">Cargo Secure Lock</h5>
+                <p class="text-muted mb-2">Lorem ipsum dolor sit amet</p>
+                <h6>Price: $89.99</h6>
+                <a href="#" class="btn btn-primary w-100 mt-2">View Details</a>
+            </div>
+        </div>
+
+        <!-- Add more products here -->
+        <!-- Example of a 4th product (will appear in next row) -->
+        <div class="col-md-4">
+            <div class="product-item p-3 border rounded">
+                <img src="img/feature.jpg" alt="Product Image" class="img-fluid mb-3" style="height: 200px; object-fit: cover;">
+                <h5 class="mb-1">Smart Container</h5>
+                <p class="text-muted mb-2">Lorem ipsum dolor sit amet</p>
+                <h6>Price: $1299.99</h6>
+                <a href="#" class="btn btn-primary w-100 mt-2">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
     <!-- Product Details End -->
@@ -115,7 +315,7 @@
                         &copy; <a class="border-bottom" href="#">EasyFreight.com</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">EasyFreight</a>
                         </br>Distributed By <a class="border-bottom" href="https://EasyFreight.com" target="_blank">EasyFreight</a>
                     </div>
@@ -124,6 +324,16 @@
         </div>
     </div>
     <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
