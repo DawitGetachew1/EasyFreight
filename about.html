@@ -29,6 +29,77 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background-color: #4a91e2;
+            padding: 40px 20px;
+            min-height: 80vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .company-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .logo-circle {
+            background: #333;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .arrow-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .service-text {
+            background: #ff4444;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            transform: rotate(-5deg);
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .building-icon, .ship-icon {
+            width: 150px;
+            height: 150px;
+            fill: white;
+        }
+
+        .title {
+            text-align: center;
+            color: #333;
+            font-size: 32px;
+            margin-top: 40px;
+        }
+    </style>
+
+
+
 </head>
 
 <body>
@@ -211,6 +282,38 @@
     </div>
 </div>
 <!-- Feature End -->
+<div class="hero-section">
+    <div class="company-logos">
+        <div class="logo-circle">
+            <div>
+                <img src="img/logohr.png" alt="Company Logo" width="250px" height="250px">
+              </div>
+        </div>
+        <div class="arrow-container">
+            <div>
+                <img src="img/logoez.png" alt="Company Logo" >
+              </div>
+        </div>
+        <div class="logo-circle">
+            <div>
+                <img src="img/logoyy.png" alt="Company Logo" width="250px" height="250px">
+              </div>
+        </div>
+    </div>
+    
+    <div class="icons-container">
+        <svg class="building-icon" viewBox="0 0 24 24">
+            <path fill="white" d="M19 2H9c-1.1 0-2 .9-2 2v5.5l-3.5 3.5v11h19V2zm-7 15h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+        </svg>
+        
+        <h1 class="title">COMPANIES THAT WE
+            OWN</h1>
+        
+        <svg class="ship-icon" viewBox="0 0 24 24">
+            <path fill="white" d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19z"/>
+        </svg>
+    </div>
+</div>
 
 
 
